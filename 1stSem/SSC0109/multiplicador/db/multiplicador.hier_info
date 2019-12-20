@@ -1,0 +1,970 @@
+|multiplicador
+b5 <= display:inst22.5
+bS => comp2:inst19.eSinal
+bS => comp2:inst19.eS
+bS => inst27.IN0
+bS => inst28.IN0
+be0 => comp2:inst19.e0
+be1 => comp2:inst19.e1
+be2 => comp2:inst19.e2
+be3 => comp2:inst19.e3
+b4 <= display:inst22.4
+b1 <= display:inst22.1
+b2 <= display:inst22.2
+b0 <= display:inst22.0
+b6 <= display:inst22.6
+b3 <= display:inst22.3
+a5 <= display:inst21.5
+aS => comp2:inst18.eSinal
+aS => comp2:inst18.eS
+aS => inst27.IN1
+aS => inst29.IN0
+ba0 => comp2:inst18.e0
+ba1 => comp2:inst18.e1
+ba2 => comp2:inst18.e2
+ba3 => comp2:inst18.e3
+a4 <= display:inst21.4
+a1 <= display:inst21.1
+a2 <= display:inst21.2
+a0 <= display:inst21.0
+a6 <= display:inst21.6
+a3 <= display:inst21.3
+05 <= display:inst20.5
+04 <= display:inst20.4
+01 <= display:inst20.1
+02 <= display:inst20.2
+00 <= display:inst20.0
+06 <= display:inst20.6
+03 <= display:inst20.3
+14 <= display:inst23.4
+15 <= display:inst23.5
+11 <= display:inst23.1
+12 <= display:inst23.2
+10 <= display:inst23.0
+16 <= display:inst23.6
+13 <= display:inst23.3
+fSig <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+sbS <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+saS <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|display:inst22
+5 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+s2 => inst1.IN0
+s2 => inst32.IN0
+s2 => inst38.IN1
+s2 => inst41.IN1
+s2 => inst54.IN0
+s2 => inst56.IN0
+s2 => inst58.IN0
+s2 => inst57.IN0
+s2 => inst63.IN0
+s2 => inst64.IN1
+s2 => inst66.IN1
+s2 => inst67.IN1
+s2 => inst77.IN0
+s2 => inst79.IN2
+s2 => inst78.IN1
+s2 => inst80.IN2
+s1 => inst29.IN1
+s1 => inst31.IN0
+s1 => inst36.IN0
+s1 => inst28.IN0
+s1 => inst39.IN0
+s1 => inst44.IN0
+s1 => inst37.IN1
+s1 => inst48.IN0
+s1 => inst51.IN1
+s1 => inst26.IN0
+s1 => inst55.IN0
+s1 => inst59.IN1
+s1 => inst57.IN1
+s1 => inst65.IN1
+s1 => inst64.IN0
+s1 => inst68.IN0
+s1 => inst70.IN1
+s1 => inst72.IN0
+s1 => inst73.IN0
+s1 => inst75.IN2
+s1 => inst79.IN1
+s3 => inst30.IN1
+s3 => inst36.IN1
+s3 => inst40.IN0
+s3 => inst41.IN0
+s3 => inst42.IN1
+s3 => inst54.IN1
+s3 => inst48.IN1
+s3 => inst53.IN0
+s3 => inst55.IN2
+s3 => inst56.IN1
+s3 => inst58.IN1
+s3 => inst57.IN2
+s3 => inst25.IN0
+s3 => inst71.IN1
+s3 => inst73.IN1
+s3 => inst75.IN1
+s3 => inst74.IN1
+s3 => inst77.IN2
+s3 => inst81.IN2
+s0 => inst27.IN0
+s0 => inst28.IN1
+s0 => inst38.IN0
+s0 => inst44.IN1
+s0 => inst50.IN0
+s0 => inst55.IN1
+s0 => inst63.IN1
+s0 => inst65.IN0
+s0 => inst66.IN0
+s0 => inst74.IN0
+s0 => inst77.IN1
+s0 => inst80.IN0
+4 <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+1 <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+2 <= inst61.DB_MAX_OUTPUT_PORT_TYPE
+0 <= inst62.DB_MAX_OUTPUT_PORT_TYPE
+6 <= inst76.DB_MAX_OUTPUT_PORT_TYPE
+3 <= inst82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|comp2:inst19
+s0 <= meiosomador:inst5.S
+e0 => inst.IN0
+eSinal => inst.IN1
+eSinal => meiosomador:inst5.B
+eSinal => inst1.IN1
+eSinal => inst2.IN1
+eSinal => inst3.IN1
+eSinal => inst4.IN1
+s1 <= meiosomador:inst6.S
+e1 => inst1.IN0
+s2 <= meiosomador:inst7.S
+e2 => inst2.IN0
+s3 <= meiosomador:inst8.S
+e3 => inst3.IN0
+sS <= meiosomador:inst9.S
+eS => inst4.IN0
+
+
+|multiplicador|comp2:inst19|meiosomador:inst5
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|comp2:inst19|meiosomador:inst6
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|comp2:inst19|meiosomador:inst7
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|comp2:inst19|meiosomador:inst8
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|comp2:inst19|meiosomador:inst9
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|display:inst21
+5 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+s2 => inst1.IN0
+s2 => inst32.IN0
+s2 => inst38.IN1
+s2 => inst41.IN1
+s2 => inst54.IN0
+s2 => inst56.IN0
+s2 => inst58.IN0
+s2 => inst57.IN0
+s2 => inst63.IN0
+s2 => inst64.IN1
+s2 => inst66.IN1
+s2 => inst67.IN1
+s2 => inst77.IN0
+s2 => inst79.IN2
+s2 => inst78.IN1
+s2 => inst80.IN2
+s1 => inst29.IN1
+s1 => inst31.IN0
+s1 => inst36.IN0
+s1 => inst28.IN0
+s1 => inst39.IN0
+s1 => inst44.IN0
+s1 => inst37.IN1
+s1 => inst48.IN0
+s1 => inst51.IN1
+s1 => inst26.IN0
+s1 => inst55.IN0
+s1 => inst59.IN1
+s1 => inst57.IN1
+s1 => inst65.IN1
+s1 => inst64.IN0
+s1 => inst68.IN0
+s1 => inst70.IN1
+s1 => inst72.IN0
+s1 => inst73.IN0
+s1 => inst75.IN2
+s1 => inst79.IN1
+s3 => inst30.IN1
+s3 => inst36.IN1
+s3 => inst40.IN0
+s3 => inst41.IN0
+s3 => inst42.IN1
+s3 => inst54.IN1
+s3 => inst48.IN1
+s3 => inst53.IN0
+s3 => inst55.IN2
+s3 => inst56.IN1
+s3 => inst58.IN1
+s3 => inst57.IN2
+s3 => inst25.IN0
+s3 => inst71.IN1
+s3 => inst73.IN1
+s3 => inst75.IN1
+s3 => inst74.IN1
+s3 => inst77.IN2
+s3 => inst81.IN2
+s0 => inst27.IN0
+s0 => inst28.IN1
+s0 => inst38.IN0
+s0 => inst44.IN1
+s0 => inst50.IN0
+s0 => inst55.IN1
+s0 => inst63.IN1
+s0 => inst65.IN0
+s0 => inst66.IN0
+s0 => inst74.IN0
+s0 => inst77.IN1
+s0 => inst80.IN0
+4 <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+1 <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+2 <= inst61.DB_MAX_OUTPUT_PORT_TYPE
+0 <= inst62.DB_MAX_OUTPUT_PORT_TYPE
+6 <= inst76.DB_MAX_OUTPUT_PORT_TYPE
+3 <= inst82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|comp2:inst18
+s0 <= meiosomador:inst5.S
+e0 => inst.IN0
+eSinal => inst.IN1
+eSinal => meiosomador:inst5.B
+eSinal => inst1.IN1
+eSinal => inst2.IN1
+eSinal => inst3.IN1
+eSinal => inst4.IN1
+s1 <= meiosomador:inst6.S
+e1 => inst1.IN0
+s2 <= meiosomador:inst7.S
+e2 => inst2.IN0
+s3 <= meiosomador:inst8.S
+e3 => inst3.IN0
+sS <= meiosomador:inst9.S
+eS => inst4.IN0
+
+
+|multiplicador|comp2:inst18|meiosomador:inst5
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|comp2:inst18|meiosomador:inst6
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|comp2:inst18|meiosomador:inst7
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|comp2:inst18|meiosomador:inst8
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|comp2:inst18|meiosomador:inst9
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|display:inst20
+5 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+s2 => inst1.IN0
+s2 => inst32.IN0
+s2 => inst38.IN1
+s2 => inst41.IN1
+s2 => inst54.IN0
+s2 => inst56.IN0
+s2 => inst58.IN0
+s2 => inst57.IN0
+s2 => inst63.IN0
+s2 => inst64.IN1
+s2 => inst66.IN1
+s2 => inst67.IN1
+s2 => inst77.IN0
+s2 => inst79.IN2
+s2 => inst78.IN1
+s2 => inst80.IN2
+s1 => inst29.IN1
+s1 => inst31.IN0
+s1 => inst36.IN0
+s1 => inst28.IN0
+s1 => inst39.IN0
+s1 => inst44.IN0
+s1 => inst37.IN1
+s1 => inst48.IN0
+s1 => inst51.IN1
+s1 => inst26.IN0
+s1 => inst55.IN0
+s1 => inst59.IN1
+s1 => inst57.IN1
+s1 => inst65.IN1
+s1 => inst64.IN0
+s1 => inst68.IN0
+s1 => inst70.IN1
+s1 => inst72.IN0
+s1 => inst73.IN0
+s1 => inst75.IN2
+s1 => inst79.IN1
+s3 => inst30.IN1
+s3 => inst36.IN1
+s3 => inst40.IN0
+s3 => inst41.IN0
+s3 => inst42.IN1
+s3 => inst54.IN1
+s3 => inst48.IN1
+s3 => inst53.IN0
+s3 => inst55.IN2
+s3 => inst56.IN1
+s3 => inst58.IN1
+s3 => inst57.IN2
+s3 => inst25.IN0
+s3 => inst71.IN1
+s3 => inst73.IN1
+s3 => inst75.IN1
+s3 => inst74.IN1
+s3 => inst77.IN2
+s3 => inst81.IN2
+s0 => inst27.IN0
+s0 => inst28.IN1
+s0 => inst38.IN0
+s0 => inst44.IN1
+s0 => inst50.IN0
+s0 => inst55.IN1
+s0 => inst63.IN1
+s0 => inst65.IN0
+s0 => inst66.IN0
+s0 => inst74.IN0
+s0 => inst77.IN1
+s0 => inst80.IN0
+4 <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+1 <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+2 <= inst61.DB_MAX_OUTPUT_PORT_TYPE
+0 <= inst62.DB_MAX_OUTPUT_PORT_TYPE
+6 <= inst76.DB_MAX_OUTPUT_PORT_TYPE
+3 <= inst82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|mult:inst
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|mult:inst6
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst6|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst6|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|mult:inst3
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst3|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst3|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|mult:inst10
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst10|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst10|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|mult:inst7
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst7|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst7|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|mult:inst4
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst4|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst4|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|mult:inst14
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst14|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst14|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|mult:inst11
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst11|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst11|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|mult:inst8
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst8|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst8|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|mult:inst5
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst5|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst5|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|display:inst23
+5 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+s2 => inst1.IN0
+s2 => inst32.IN0
+s2 => inst38.IN1
+s2 => inst41.IN1
+s2 => inst54.IN0
+s2 => inst56.IN0
+s2 => inst58.IN0
+s2 => inst57.IN0
+s2 => inst63.IN0
+s2 => inst64.IN1
+s2 => inst66.IN1
+s2 => inst67.IN1
+s2 => inst77.IN0
+s2 => inst79.IN2
+s2 => inst78.IN1
+s2 => inst80.IN2
+s1 => inst29.IN1
+s1 => inst31.IN0
+s1 => inst36.IN0
+s1 => inst28.IN0
+s1 => inst39.IN0
+s1 => inst44.IN0
+s1 => inst37.IN1
+s1 => inst48.IN0
+s1 => inst51.IN1
+s1 => inst26.IN0
+s1 => inst55.IN0
+s1 => inst59.IN1
+s1 => inst57.IN1
+s1 => inst65.IN1
+s1 => inst64.IN0
+s1 => inst68.IN0
+s1 => inst70.IN1
+s1 => inst72.IN0
+s1 => inst73.IN0
+s1 => inst75.IN2
+s1 => inst79.IN1
+s3 => inst30.IN1
+s3 => inst36.IN1
+s3 => inst40.IN0
+s3 => inst41.IN0
+s3 => inst42.IN1
+s3 => inst54.IN1
+s3 => inst48.IN1
+s3 => inst53.IN0
+s3 => inst55.IN2
+s3 => inst56.IN1
+s3 => inst58.IN1
+s3 => inst57.IN2
+s3 => inst25.IN0
+s3 => inst71.IN1
+s3 => inst73.IN1
+s3 => inst75.IN1
+s3 => inst74.IN1
+s3 => inst77.IN2
+s3 => inst81.IN2
+s0 => inst27.IN0
+s0 => inst28.IN1
+s0 => inst38.IN0
+s0 => inst44.IN1
+s0 => inst50.IN0
+s0 => inst55.IN1
+s0 => inst63.IN1
+s0 => inst65.IN0
+s0 => inst66.IN0
+s0 => inst74.IN0
+s0 => inst77.IN1
+s0 => inst80.IN0
+4 <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+1 <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+2 <= inst61.DB_MAX_OUTPUT_PORT_TYPE
+0 <= inst62.DB_MAX_OUTPUT_PORT_TYPE
+6 <= inst76.DB_MAX_OUTPUT_PORT_TYPE
+3 <= inst82.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador|mult:inst15
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst15|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst15|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|mult:inst12
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst12|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst12|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|mult:inst9
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst9|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst9|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|mult:inst16
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst16|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst16|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|mult:inst13
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst13|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst13|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|multiplicador|mult:inst17
+S0 <= somador:inst.S
+A => inst2.IN0
+B => inst2.IN1
+S1 => somador:inst.B
+Cin => somador:inst.Cin
+Cout <= somador:inst.Cout
+
+
+|multiplicador|mult:inst17|somador:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst3.IN0
+B => inst2.IN1
+B => XOR3:inst.IN2
+Cin => inst3.IN1
+Cin => inst4.IN0
+Cin => XOR3:inst.IN3
+A => inst4.IN1
+A => inst2.IN0
+A => XOR3:inst.IN1
+S <= XOR3:inst.OUT
+
+
+|multiplicador|mult:inst17|somador:inst|XOR3:inst
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
