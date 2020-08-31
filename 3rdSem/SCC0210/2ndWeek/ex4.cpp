@@ -4,22 +4,24 @@
 
 using namespace std;
 
-int whichPresentToOpen (vector <int> openablePresent, vector <int> presentSize) {
-    int maior, maiorIndex;
+map <int, bool>::iterator whichPresentToOpen (map <int, bool> openablePresent, map <int, int> presentSize) {
+    map <int, bool>::iterator it, itMaior;
+    bool wasSet = false;
 
-    if (openablePresent.empty() == true) return -1;
+    for (it = openablePresent.begin(); it != openablePresent.end(); it++) {
+        if (it->second == true) {
+            if (wasSet == false) {
+                itMaior = it;
+                wasSet = true;
+            }
 
-    maior = openablePresent[0];
-    maiorIndex = 0;
-
-    for (int i = 1; i < (int) openablePresent.size(); i++) {
-        if (presentSize[openablePresent[i]] > presentSize[maior]) {
-            maior = openablePresent[i];
-            maiorIndex = i;
+            else if (presentSize[it->first] > presentSize[itMaior->first]) {
+                itMaior = it;
+            }
         }
     }
 
-    return maiorIndex;
+    return itMaior;
 }
 
 int main () {
@@ -28,11 +30,11 @@ int main () {
 
     int tmpPresentSize;
     int newPresent;
-    vector <int> presentSize;
+    map <int, int> presentSize;
 
-    vector <int> openablePresents;
+    map <int, bool> openablePresents;
 
-    vector <int>::iterator it;
+    map <int, bool>::iterator itPresent;
 
     int qi;
     map <int, vector <int>> boxInsideBox;
@@ -42,7 +44,7 @@ int main () {
 
     for (int i = 0; i < n; i++) {
         cin >> tmpPresentSize;
-        presentSize.push_back(tmpPresentSize);
+        presentSize[i] = tmpPresentSize;
     }
 
     for (int i = 0; i < n; i++) {
@@ -57,28 +59,26 @@ int main () {
 
     for (int i = 0; i < m; i++) {
         cin >> tmpIndex;
-        openablePresents.push_back(tmpIndex-1);
+        openablePresents[tmpIndex-1] = true;
     }
 
     for (int i = 0; i < k; i++) {
-        tmpIndex = whichPresentToOpen(openablePresents, presentSize);
+        if (openablePresents.empty() == true) break;
 
-        if (tmpIndex == -1) break;
+        itPresent = whichPresentToOpen(openablePresents, presentSize);
 
-        newPresent = openablePresents[tmpIndex];
+        newPresent = itPresent->first;
 
         if (boxInsideBox[newPresent].empty() == true) {
             counterToys++;
         }
         
         while (boxInsideBox[newPresent].empty() == false) {
-            openablePresents.push_back(boxInsideBox[newPresent].back());
+            openablePresents[boxInsideBox[newPresent].back()] = true;
             boxInsideBox[newPresent].pop_back();
         }
 
-        it = openablePresents.begin();
-
-        openablePresents.erase(it+tmpIndex);
+        openablePresents.erase(itPresent->first);
     }
 
     cout << counterToys << endl;

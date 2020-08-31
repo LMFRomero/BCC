@@ -1,0 +1,6 @@
+vgcore*
+*.o
+prog
+*.bin
+*.csv
+trab1.zip
